@@ -1,0 +1,16 @@
+PODS:
+  - AttributedStringWrapper (1.0.0)
+
+DEPENDENCIES:
+  - AttributedStringWrapper (from `.`)
+
+EXTERNAL SOURCES:
+  AttributedStringWrapper:
+    :path: "."
+
+SPEC CHECKSUMS:
+  AttributedStringWrapper: 7398cd21da18e538bd3e04595c817834517bdaf4
+
+PODFILE CHECKSUM: 6a32f415201e8b4448b70222d662ed98efb484da
+
+COCOAPODS: 1.2.1

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AttributedStringWrapper
+//  Demo
 //
-//  Created by 郜宇 on 2017/6/12.
+//  Created by 郜宇 on 2017/6/13.
 //  Copyright © 2017年 Loopeer. All rights reserved.
 //
 
