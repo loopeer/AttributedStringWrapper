@@ -1,14 +1,10 @@
 # AttributedStringWrapper
 
 ![Xcode 8.3+](https://img.shields.io/badge/Xcode-8.3%2B-blue.svg)
-
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
-
 ![Swift 3.1+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
-
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)
 ![pod](https://img.shields.io/badge/pod-v0.2.0-brightgreen.svg)
-
-
 
 
 
@@ -38,7 +34,6 @@ extension UILabel {
         self.attributedText = attrStr
     }
 }
-
 ```
 
 
@@ -48,9 +43,9 @@ extension UILabel {
 ```swift
 // 1. shadow: you can set range, default allRange
 label1.attributedText = content.toAttributed.shadow {
-            $0.shadowColor = UIColor.red
-            $0.shadowOffset = CGSize(width: 3, height: 3)
-            $0.shadowBlurRadius = 2.0
+    $0.shadowColor = UIColor.red
+    $0.shadowOffset = CGSize(width: 3, height: 3)
+    $0.shadowBlurRadius = 2.0
 }.rawValue
 
 
