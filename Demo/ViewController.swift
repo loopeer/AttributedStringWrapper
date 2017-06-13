@@ -51,12 +51,12 @@ class ViewController: UIViewController {
         
         
         
-        // strokeStyle:
+        // 5. strokeStyle:
         label5.attributedText = content.toAttributed.stroke(color: UIColor.blue, width: 2.5).rawValue
         
         
         
-        // all:
+        // 6. all:
         label6.attributedText = content.toAttributed
             .underLine(style: [.styleSingle, .patternDot], color: .red, range: NSMakeRange(0, 5))
             .font(.systemFont(ofSize: 18), range: NSMakeRange(5, 5))
