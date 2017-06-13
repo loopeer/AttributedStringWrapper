@@ -11,7 +11,6 @@
 **AttributedStringWrapper** is a simple packaging for NSAttributedString to make the developers easy to use 
 
 
-
 ## Overview
 
 **AttributedStringWrapper**  is base on String extension, converted into `RawRepresentable` protocal in order to solve the question of `Object-C` namespace.
@@ -19,7 +18,7 @@ So it looks a bit strange, if you have a better way, please contact me
 
 
 
-### Before, you may like me
+#### Before, you may like me
 
 ```swift
 extension UILabel {
@@ -37,8 +36,7 @@ extension UILabel {
 ```
 
 
-
-#### After:
+#### After: 
 
 ```swift
 // 1. shadow: you can set range, default allRange
@@ -60,8 +58,8 @@ label2.attributedText = content.toAttributed.paragraph {
 label3.attributedText = content.toAttributed.underLine(style: [.styleDouble, .patternDot], color: UIColor.red).rawValue
 
 // 4. font, foregroundColor
-textField.attributedPlaceholder = "Please enter the phone number"                							.toAttributed.font(.systemFont(ofSize: 15))
-					.foregroundColor(.red).rawValue
+textField.attributedPlaceholder = "Please enter the phone number".toAttributed.font(.systemFont(ofSize: 15))
+                                                                 .foregroundColor(.red).rawValue
 
 // 5. Even you can do it
 label6.attributedText = content.toAttributed
