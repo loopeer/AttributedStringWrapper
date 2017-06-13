@@ -1,12 +1,16 @@
 # AttributedStringWrapper
 
-![Xcode 8.2+]([https://img.shields.io/badge/Xcode-8.2%2B-blue.svg](https://img.shields.io/badge/Xcode-8.2%2B-blue.svg))
+![Xcode 8.3+](https://img.shields.io/badge/Xcode-8.3%2B-blue.svg)
 
-![iOS 8.0+]([https://img.shields.io/badge/iOS-8.0%2B-blue.svg](https://img.shields.io/badge/iOS-8.0%2B-blue.svg))
+![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
 
-![Swift 3.0+]([https://img.shields.io/badge/Swift-3.0%2B-orange.svg](https://img.shields.io/badge/Swift-3.0%2B-orange.svg))
+![Swift 3.1+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
 
-![Version]([https://img.shields.io/cocoapods/v/AlertTransition.svg?style=flat](https://img.shields.io/cocoapods/v/AlertTransition.svg?style=flat))](https://cocoapods.org/pods/AlertTransition)
+![pod](https://img.shields.io/badge/pod-v0.2.0-brightgreen.svg)
+
+
+
+
 
 **AttributedStringWrapper** is a simple packaging for NSAttributedString to make the developers easy to use 
 
