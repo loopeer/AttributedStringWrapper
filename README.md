@@ -3,8 +3,8 @@
 ![Xcode 8.3+](https://img.shields.io/badge/Xcode-8.3%2B-blue.svg)
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
 ![Swift 3.1+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
-![pod](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)
-
+[![Version](https://img.shields.io/cocoapods/v/AttributedStringWrapper.svg?style=flat)](https://cocoapods.org/pods/AttributedStringWrapper)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/loopeer/AttributedStringWrapper)
 
 
 **AttributedStringWrapper** is a simple packaging for NSAttributedString to make the developers easy to use 
@@ -81,6 +81,48 @@ label6.attributedText = content.toAttributed
 
 
 
+
+## Installation
+
+
+### 1. CocoaPods
+
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects.
+
+Specify AttributedStringWrapper into your project's Podfile:
+
+
+```ruby
+# source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your App Target>' do
+  pod 'AttributedStringWrapper'
+end
+```
+
+
+Then run the following command:
+
+```sh
+$ pod install
+```
+
+
+### 2. Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a simple, decentralized
+dependency manager for Cocoa.
+
+Specify AttributedStringWrapper into your project's Carthage:
+
+
+```
+github "loopeer/AttributedStringWrapper" ~> 1.0.0
+
+```
 
 
 
