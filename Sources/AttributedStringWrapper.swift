@@ -163,4 +163,21 @@ public extension AttributedStringWrapper {
         rawValue.addAttributes([NSVerticalGlyphFormAttributeName: value], range: range ?? allRange)
         return self
     }
+    
+    /// get height
+    func getHeight(by fixedWidth: CGFloat) -> CGFloat {
+        let h = rawValue.boundingRect(with: CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)), options: [.usesFontLeading , .usesLineFragmentOrigin, .usesDeviceMetrics], context: nil).size.height
+        return ceil(h)
+    }
+    /// get width
+    func getWidth(by fixedHeight: CGFloat) -> CGFloat {
+        let w = rawValue.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fixedHeight), options: [.usesFontLeading , .usesLineFragmentOrigin], context: nil).size.width
+        return ceil(w)
+    }
 }
+
+
+
+
+
+

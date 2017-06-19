@@ -9,6 +9,9 @@
 import UIKit
 import AttributedStringWrapper
 
+let screenW = UIScreen.main.bounds.width
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var label1: UILabel!
@@ -25,19 +28,25 @@ class ViewController: UIViewController {
         
         
         // 1. shadow: you can set range, default allRange
-        label1.attributedText = content.toAttributed.shadow {
+        let attrText1 = content.toAttributed.shadow {
             $0.shadowColor = UIColor.red
             $0.shadowOffset = CGSize(width: 3, height: 3)
             $0.shadowBlurRadius = 2.0
-        }.rawValue
+        }.font(UIFont.systemFont(ofSize: 15))
+        
+        label1.attributedText = attrText1.rawValue
+        // Add the shadow offset
+        print(attrText1.getHeight(by: screenW - 20) + 3)
         
         
         
         // 2. paragraphStyle: you can set range, default allRange
-        label2.attributedText = content.toAttributed.paragraph {
+        let attrText2 = content.toAttributed.paragraph {
             $0.alignment = .center
             $0.lineSpacing = 8.0
-        }.rawValue
+        }.font(UIFont.systemFont(ofSize: 15))
+        label2.attributedText = attrText2.rawValue
+        print(attrText2.getHeight(by: screenW - 20))
         
         
         
@@ -53,8 +62,6 @@ class ViewController: UIViewController {
         
         // 5. strokeStyle:
         label5.attributedText = content.toAttributed.stroke(color: UIColor.blue, width: 2.5).rawValue
-        
-        
         
         // 6. all:
         label6.attributedText = content.toAttributed
@@ -74,5 +81,16 @@ class ViewController: UIViewController {
                 $0.shadowBlurRadius = 2.0
             }.rawValue
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print("label1 height: \(label1.frame.height)")
+        print("label2 height: \(label2.frame.height)")
+    }
+    
 }
+
+
+
+
 
