@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AttributedStringWrapper"
-  s.version      = “1.0.1”
+  s.version      = "1.0.1"
   s.summary      = "A simple packaging for NSAttributedString to make the developers easy to use"
 
   s.homepage     = "https://github.com/loopeer/AttributedStringWrapper"

@@ -147,7 +147,7 @@ Specify AttributedStringWrapper into your project's Carthage:
 
 
 ```
-github "loopeer/AttributedStringWrapper" ~> 1.0.0
+github "loopeer/AttributedStringWrapper" ~> 1.0.1
 
 ```
 
