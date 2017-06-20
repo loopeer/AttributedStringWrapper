@@ -5,7 +5,8 @@
 ![Swift 3.1+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg)
 [![Version](https://img.shields.io/cocoapods/v/AttributedStringWrapper.svg?style=flat)](https://cocoapods.org/pods/AttributedStringWrapper)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/loopeer/AttributedStringWrapper)
-
+<a href="http://cocoapods.org/pods/AttributedStringWrapper"><img src="https://img.shields.io/cocoapods/at/AttributedStringWrapper.svg?label=Apps%20Using%20AttributedStringWrapper&colorB=28B9FE"></a>
+<a href="http://cocoapods.org/pods/AttributedStringWrapper"><img src="https://img.shields.io/cocoapods/dt/AttributedStringWrapper.svg?label=Total%20Downloads&colorB=28B9FE"></a>
 
 **AttributedStringWrapper** is a simple packaging for NSAttributedString to make the developers easy to use 
 
