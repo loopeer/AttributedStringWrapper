@@ -32,6 +32,24 @@ extension UILabel {
         self.attributedText = attrStr
     }
 }
+
+```
+
+
+```
+        let attr = NSMutableAttributedString(string: content)
+        let paragrap = NSParagraphStyle()
+        paragrap.lineSpacing = 8.0
+        paragrap.alignment = .center
+        attr.addAttributes([NSParagraphStyle: paragrap], range: NSMakeRange(0, attr.length))
+        attr.addAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 17)], range: NSMakeRange(0, attr.length))
+        let shadow = NSShadow()
+        shadow.shadowColor = UIColor.red
+        shadow.shadowOffset = CGSize(width: 3, height: 3)
+        shadow.shadowBlurRadius = 2.0
+        attr.addAttributes([NSShadowAttributeName: NSShadow], range: NSMakeRange(0, attr.length))
+        label6.attributedText = attr
+
 ```
 
 
@@ -47,10 +65,14 @@ label1.attributedText = content.toAttributed.shadow {
 
 
 // 2. paragraphStyle: you can set range, default allRange
-label2.attributedText = content.toAttributed.paragraph {
+
+let attrText2 = content.toAttributed.paragraph {
     $0.alignment = .center
     $0.lineSpacing = 8.0
-}.rawValue
+}.font(UIFont.systemFont(ofSize: 15))
+
+label2.attributedText = attrText2.rawValue
+print(attrText2.getHeight(by: screenW - 20))
 
 
 // 3. underLine:  you can set range, default allRange

@@ -164,12 +164,12 @@ public extension AttributedStringWrapper {
         return self
     }
     
-    /// get height
+    /// get height, Before this, you must set the height of the text firstly
     func getHeight(by fixedWidth: CGFloat) -> CGFloat {
         let h = rawValue.boundingRect(with: CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)), options: [.usesFontLeading , .usesLineFragmentOrigin, .usesDeviceMetrics], context: nil).size.height
         return ceil(h)
     }
-    /// get width
+    /// get width, Before this, you must set the height of the text firstly
     func getWidth(by fixedHeight: CGFloat) -> CGFloat {
         let w = rawValue.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fixedHeight), options: [.usesFontLeading , .usesLineFragmentOrigin], context: nil).size.width
         return ceil(w)
