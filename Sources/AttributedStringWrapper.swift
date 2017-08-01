@@ -30,7 +30,7 @@ public extension AttributedStringWrapper {
     @available(iOS 9.0, *)
     typealias WriteDirection = (formatType: NSWritingDirectionFormatType, direction: NSWritingDirection)
     
-    var allRange: NSRange {
+    public var allRange: NSRange {
         return NSMakeRange(0, self.rawValue.length)
     }
     
@@ -175,6 +175,29 @@ public extension AttributedStringWrapper {
         return ceil(w)
     }
 }
+
+
+public func + (lf: AttributedStringWrapper, rf: AttributedStringWrapper) -> AttributedStringWrapper {
+    lf.rawValue.append(rf.rawValue)
+    return lf
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

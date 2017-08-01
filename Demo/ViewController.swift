@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,10 @@ class ViewController: UIViewController {
                 $0.shadowOffset = CGSize(width: 3, height: 3)
                 $0.shadowBlurRadius = 2.0
             }.rawValue
+        
+        label7.attributedText = ("昵称: ".toAttributed.font(UIFont.systemFont(ofSize: 18)).foregroundColor(UIColor.red) +
+                                "loopeer".toAttributed.font(UIFont.systemFont(ofSize: 13)).underLine(style: [.styleSingle])).rawValue
+        
     }
     
     override func viewDidLayoutSubviews() {
