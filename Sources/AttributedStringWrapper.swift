@@ -176,7 +176,6 @@ public extension AttributedStringWrapper {
     }
 }
 
-
 public func + (lf: AttributedStringWrapper, rf: AttributedStringWrapper) -> AttributedStringWrapper {
     lf.rawValue.append(rf.rawValue)
     return lf
