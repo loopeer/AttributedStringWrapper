@@ -104,7 +104,17 @@ label6.attributedText = content.toAttributed
                 $0.shadowOffset = CGSize(width: 3, height: 3)
                 $0.shadowBlurRadius = 2.0
             }.rawValue
+
+// 6. “+”
+label7.attributedText = ("昵称: ".toAttributed.font(UIFont.systemFont(ofSize: 18)).foregroundColor(UIColor.red) +
+                         "loopeer".toAttributed.font(UIFont.systemFont(ofSize: 13)).underLine(style: [.styleSingle])).rawValue
+
+
 ```
+
+<img src="./images/demo.png" alt="demo" title="demo"/>
+
+
 
 
 
@@ -147,7 +157,7 @@ Specify AttributedStringWrapper into your project's Carthage:
 
 
 ```
-github "loopeer/AttributedStringWrapper" ~> 1.0.1
+github "loopeer/AttributedStringWrapper" ~> 1.0.2
 
 ```
 

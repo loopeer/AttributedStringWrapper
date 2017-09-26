@@ -1,16 +1,16 @@
 PODS:
-  - AttributedStringWrapper (1.0.0)
+  - AttributedStringWrapper (1.0.1)
 
 DEPENDENCIES:
   - AttributedStringWrapper (from `.`)
 
 EXTERNAL SOURCES:
   AttributedStringWrapper:
-    :path: "."
+    :path: .
 
 SPEC CHECKSUMS:
-  AttributedStringWrapper: 7398cd21da18e538bd3e04595c817834517bdaf4
+  AttributedStringWrapper: 1cf603756597d75cf655d79ef7520f6d04ba3d09
 
 PODFILE CHECKSUM: 6a32f415201e8b4448b70222d662ed98efb484da
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
