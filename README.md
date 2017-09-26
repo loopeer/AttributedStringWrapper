@@ -136,7 +136,12 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your App Target>' do
-  pod 'AttributedStringWrapper'
+  #swift 3.x
+  pod 'AttributedStringWrapper', '~> 1.0.2'  
+  
+  #swift 4.0
+  pod 'AttributedStringWrapper', '~> 1.0.3'
+ 
 end
 ```
 

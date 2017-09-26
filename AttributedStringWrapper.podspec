@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AttributedStringWrapper"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A simple packaging for NSAttributedString to make the developers easy to use"
 
   s.homepage     = "https://github.com/loopeer/AttributedStringWrapper"
@@ -17,5 +17,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
   s.requires_arc = true
+
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end
