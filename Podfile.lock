@@ -1,5 +1,5 @@
 PODS:
-  - AttributedStringWrapper (1.0.1)
+  - AttributedStringWrapper (1.0.2)
 
 DEPENDENCIES:
   - AttributedStringWrapper (from `.`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  AttributedStringWrapper: 1cf603756597d75cf655d79ef7520f6d04ba3d09
+  AttributedStringWrapper: b6ceaec3b0c24e7efa8076671d2fd4ed84972b0b
 
 PODFILE CHECKSUM: 6a32f415201e8b4448b70222d662ed98efb484da
 
